@@ -21,27 +21,25 @@
 <body>
 
     <div class="container mt-3">
-        <div class="card row col-lg-6 mx-auto">
-            <h5 class="card-header">TODO App</h5>
+        <div class="card row col-lg-6 mx-auto bg-light">
+            <h5 class="card-header bg-dark text-light text-center">TODO App</h5>
             <div class="card-body">
                 <h5 class="card-title">Add It</h5>
-                <form id="todo-form">
+                <form id="todo-form" autocomplete="off">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="todo-input"
-                            placeholder="Write here what you want to add" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                            placeholder="Write here what you want to add">
                     </div>
-                    <div class="col-12">
                         <button type="submit" class="btn btn-primary" id="btn-add">Add It</button>
                 </form>
+                <div id="firstCardEnd" class="mt-2"></div>
                 <hr>
 
             </div>
-            <div class="card-body px-0">
+            <div class="card-body">
                 <h5 class="card-title">Filter It</h5>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Filter TODOs" aria-label="Username"
-                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Filter TODOs" id="filter-input">
                 </div>
                 <ul class="list-group">
 
